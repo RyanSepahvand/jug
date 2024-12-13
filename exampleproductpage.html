@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product detail page</title>
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/productpage.css">
+
+  <!-- 
+    - google font link
+  -->
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon Dark-2_prev_ui.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <!--=============== PRECONNECT ===============-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <!--=============== GOOGLE CSS ===============-->      
+      <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+      <!--=============== LALEZAR FONT ===============-->
+      <link href="https://fonts.cdnfonts.com/css/lalezar" rel="stylesheet">
+
+      <!--=============== IRANYEKAN FONT ===============-->
+      <link href="https://fonts.cdnfonts.com/css/iranyekan" rel="stylesheet">
+
+      <title>Bookies</title>
+
+</head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+
+            <div class="nav__actions">
+               <!-- Cart button -->
+               <i class="ri-shopping-cart-line"></i>
+
+               <!-- Search button -->
+               <i class="ri-search-line search-button" id="search-button"></i>
+               
+               <!-- Login button -->
+               <i class="ri-user-line login-button" id="login-button"></i>
+
+               <!-- Theme button -->
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+            
+            <div class="nav__menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#" class="nav__link active-link">
+                        <i class="ri-book-fill"></i>
+                        <span class="nav__text">خرید</span>
+                     </a>
+                     <div class="dropdown">
+                        <div class="dropdown__item"><a href="#option1">وحشت</a></div>
+                        <div class="dropdown__item"><a href="#option2">عاشقانه</a></div>
+                        <div class="dropdown__item"><a href="#option3">هیجانی</a></div>
+                        <div class="dropdown__item"><a href="#option4">بیوگرافی</a></div>
+                        <div class="dropdown__item"><a href="#option5">تاریخی</a></div>
+                        <div class="dropdown__item"><a href="#option6">تخیلی</a></div>
+                        <div class="dropdown__item"><a href="#option7">کودکانه</a></div>
+                        <div class="dropdown__item"><a href="#option8">نوجوانانه</a></div>
+                        <div class="dropdown__item"><a href="#option9">درسی</a></div>
+                        <div class="dropdown__item"><a href="#option10">زبان خارجی</a></div>
+                        <div class="dropdown__item"><a href="#option9">کنکوری</a></div>
+                        <div class="dropdown__item"><a href="#option10">امتحان</a></div>
+                        <div class="dropdown__item"><a href="#option11">مدرسه</a></div>
+                        <div class="dropdown__item"><a style="font-weight: 800;" href="books.html">همه</a></div>
+                    </div> 
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#featured" class="nav__link">
+                        <i class="ri-money-dollar-circle-line"></i>
+                        <span class="nav__text">فروش</span>
+                     </a>                  
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <i class="ri-shake-hands-line"></i>
+                        <span class="nav__text">امانت</span>
+                     </a>
+                     <div class="dropdown">
+                        <div class="dropdown__item"><a href="#option1">وحشت</a></div>
+                        <div class="dropdown__item"><a href="#option2">عاشقانه</a></div>
+                        <div class="dropdown__item"><a href="#option3">هیجانی</a></div>
+                        <div class="dropdown__item"><a href="#option4">بیوگرافی</a></div>
+                        <div class="dropdown__item"><a href="#option5">تاریخی</a></div>
+                        <div class="dropdown__item"><a href="#option6">تخیلی</a></div>
+                        <div class="dropdown__item"><a href="#option7">جنایی</a></div>
+                        <div class="dropdown__item"><a href="#option8">فانتزی</a></div>
+                        <div class="dropdown__item"><a href="#option7">کودکانه</a></div>
+                        <div class="dropdown__item"><a href="#option8">نوجوانانه</a></div>
+                        <div class="dropdown__item"><a style="font-weight: 800;" href="#option9">همه</a></div>
+                    </div>  
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#new" class="nav__link">
+                        <i class="ri-booklet-line"></i>
+                        <span class="nav__text">کتابنامه</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#testimonial" class="nav__link">
+                        <i class="ri-user-smile-line"></i>
+                        <span class="nav__text">درباره ما</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <a href="index.html" class="nav__logo">
+               <img src="assets/img/favicon Dark-2_prev_ui.png" alt="image" class="logo">
+            </a>
+
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search-content">
+         <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="دنبال چی هستی؟" class="search__input">
+         </form>
+
+         <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login grid" id="login-content">
+         <form action="" class="login__form grid">
+            <h3 class="login__title">Log In</h3>
+            
+            <div class="login__group grid">
+               <div>
+                  <label for="login-email" class="login__label">Email</label>
+                  <input type="email" placeholder="Write your email" id="login-email" class="login__input">
+               </div>
+               
+               <div>
+                  <label for="login-pass" class="login__label">Password</label>
+                  <input type="password" placeholder="Enter your password" id="login-pass" class="login__input">
+               </div>
+            </div>
+
+            <div>
+               <span class="login__signup">
+                  You do not have an account? <a href="#">Sign up</a>
+               </span>
+   
+               <a href="#" class="login__forgot">
+                  You forgot your password
+               </a>
+   
+               <button type="submit" class="login__button button">Log In</button>
+            </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product" aria-label="product">
+        <div class="container">
+
+          <div class="product-slides">
+
+            <div class="slider-banner" data-slider>
+              <figure class="product-banner">
+                <img src="./assets/img/image copy 2.png" width="600" height="600" loading="lazy" alt="Nike Sneaker"
+                  class="img-cover">
+              </figure>
+
+
+            </div>
+          </div>
+
+          <div class="product-content">
+
+            <p class="product-subtitle">کتاب بزرگسال</p>
+
+            <h1 class="h1 product-title">صد سال تنهایی</h1>
+
+            <p class="product-text">
+              کتابی خوب و جالب
+            </p>
+
+            <div class="wrapper">
+
+              <span class="price" data-total-price>۱۱۲٫۰۰۰ تومان</span>
+
+              <span class="badge">در حد نو</span>
+
+              <del class="del">۲۱۰٫۰۰۰ تومان</del>
+
+            </div>
+
+            <div class="btn-group">
+
+              <div class="counter-wrapper">
+
+                <button class="counter-btn" data-qty-minus>
+                  <ion-icon name="remove-outline"></ion-icon>
+                </button>
+
+                <span class="span" data-qty>1</span>
+
+                <button class="counter-btn" data-qty-plus>
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+
+              </div>
+
+              <button class="cart-btn">
+                <span class="span">افزودن به سبد خرید</span>
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+<!--==================== FOOTER SERVICES ====================-->
+      <section class="footer-services section">
+         <div class="footer-services__container container">
+            <article class="footer-services__card">
+               <i class="ri-truck-line"></i>
+               <h3 class="footer-services__title">ارسال سریع</h3>
+            </article>
+
+            <article class="footer-services__card">
+               <i class="ri-wallet-line"></i>
+               <h3 class="footer-services__title">پرداخت امن</h3>
+            </article>
+
+            <article class="footer-services__card">
+               <i class="ri-verified-badge-line"></i>
+               <h3 class="footer-services__title">ضمانت کیفیت</h3>
+            </article>
+      
+            <article class="footer-services__card">
+               <i class="ri-message-3-line"></i>
+               <h3 class="footer-services__title">پشتیبانی انلاین</h3>
+            </article>
+         </div>
+      </section>
+
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+    <div class="footer__container container grid">
+       <div>
+          <a href="#" class="footer__logo">
+             <img src="assets/img/favicon Dark-2_prev_ui.png" alt="image" class="logo">
+          </a>
+
+          <p class="footer__description">
+             بوکیز٬ یکی از بهترین وبسایت ها<br>
+             برای خرید٬ فروش و اجاره <br>
+             کتاب های دسته دوم
+          </p>
+       </div>
+
+       <div class="footer__data grid">
+          <div>
+             <h3 class="footer__title">About</h3>
+
+             <ul class="footer__links">
+                <li>
+                   <a href="#" class="footer__link">Awards</a>
+                </li>
+
+                <li>
+                   <a href="#" class="footer__link">FAQs</a>
+                </li>
+
+                <li>
+                   <a href="#" class="footer__link">Privacy policy</a>
+                </li>
+                
+                <li>
+                   <a href="#" class="footer__link">Terms of services</a>
+                </li>
+             </ul>
+          </div>
+
+          <div>
+             <h3 class="footer__title">Company</h3>
+
+             <ul class="footer__links">
+                <li>
+                   <a href="#" class="footer__link">Blogs</a>
+                </li>
+
+                <li>
+                   <a href="#" class="footer__link">Community</a>
+                </li>
+
+                <li>
+                   <a href="#" class="footer__link">Our team</a>
+                </li>
+
+                <li>
+                   <a href="#" class="footer__link">Help center</a>
+                </li>
+             </ul>
+          </div>
+
+          <div>
+             <h3 class="footer__title">Contact</h3>
+
+             <ul class="footer__links">
+                <li>
+                   <address class="footer__info">
+                      Av. Hacienda <br>
+                      Lima 4321, Perú 
+                   </address>
+                </li>
+
+                <li>
+                   <address class="footer__info">
+                      e.book@email.com <br>
+                      0987-654-321
+                   </address>
+                </li>
+             </ul>
+          </div>
+
+          <div>
+             <h3 class="footer__title">Social</h3>
+
+             <div class="footer__social">
+                <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                   <i class="ri-facebook-circle-line"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                   <i class="ri-instagram-line"></i>
+                </a>
+
+                <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                   <i class="ri-twitter-x-line"></i>
+                </a>
+             </div>
+          </div>
+       </div>
+    </div>
+
+    <span class="footer__copy">
+       &#169; All Rights Reserved By Bookies
+    </span>
+ </footer>
+
+ <!--========== SCROLL UP ==========-->
+ <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+ </a>
+
+ <!--=============== SCROLLREVEAL ===============-->
+ <script src="assets/js/scrollreveal.min.js"></script>
+
+ <!--=============== SWIPER JS ===============-->
+ <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--=============== CUSTOM JS ===============-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!--=============== PAGE NEXT LAST BAR JS ===============-->
+ <script src="assets/js/pagenextlast.js"></script>
+
+ <!--=============== MAIN JS ===============-->
+ <script src="assets/js/main.js"></script>
+
+  <!--=============== PRODUCT PAGE JS ===============-->
+  <script src="assets/js/productdetail.js"></script>
+
+</body>
+</html>
